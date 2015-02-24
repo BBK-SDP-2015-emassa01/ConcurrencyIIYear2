@@ -1,0 +1,24 @@
+Dear students, 
+
+Please find attached the code for a simple executor as outlined in the
+class the other day. As you may remember, we did this together step-by-step because many of you found it challening. 
+
+We did not have time in the class to complete the code, but here it is. Minor additions to the code include:
+
+- Added JavaDoc and pedagogical comments
+- Added exception handling
+- Added a real script to launch and use the executor
+- Added a lot of println's so the execution can be followed at runtime
+- Encapsulated the call to wait() in its own method for clarity. 
+
+Hope this helps. 
+
+Best regards, 
+
+PS: I have also extended the code (see attached ZIP) to use a pool of
+threads and to use a blocking queue. 
+
+PS2: You will see that using a blocking queue simplifies the code
+significantly compared to using naked threads, wait(), and
+notify(). This is the reason why executors, blocking queues, and and the whole java.util.concurrent.* package was introduced in Java 5:
+to make concurrent applications easier to create and less error-prone. It is good that you understand bare threads because that knowledge may save you some day (there is a lot of legacy Java-4 code out there!) but never use them for writing new code. 
